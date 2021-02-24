@@ -1,10 +1,50 @@
-.App {
-  text-align: center;
+body {
+  background: rgba(204, 204, 204, 0.205);
+  color: #2c3e59;
+  padding: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tasks {
+  background: rgba(204, 204, 204, 0.205);
+  color: #2c3e59;
+  padding: 15px;
+  border: 1px solid #2b3e59;
+  border-radius: 5px;
+}
+
+.header {
+  font-size: larger;
+  background: #92f092;
+  color: #2b3e59;
+  font-weight: bolder;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 15px;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.button {
+  background: #92f092;
+  color: #2c3e59;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #92f092;
+  font-weight: bold;
+}
+
+.button:focus {
+  outline: none;
+  padding: 6px;
+}
+
+.button:hover {
+  background: #2c3e59;
+  color: #92f092;
+  transition: all .2s ease-in;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -32,6 +72,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
