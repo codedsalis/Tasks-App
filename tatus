@@ -1,0 +1,11 @@
+[33mcommit d54c21a06cf51645aa1c57eb2ad2d8f461d4bf79[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: codedsalis <codedsalis@gmail.com>
+Date:   Wed Feb 24 21:41:40 2021 +0100
+
+    Added functional state management and class state management
+
+[33mcommit 4264964432c6452a42aa059556afdd9096e372b9[m
+Author: codedsalis <codedsalis@gmail.com>
+Date:   Sun Feb 21 04:59:59 2021 +0100
+
+    Initialize project using Create React App

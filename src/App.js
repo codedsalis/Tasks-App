@@ -1,49 +1,70 @@
+import { useState, useEffect, React } from 'react';
+import firebase from './firebase';
+import 'firebase/auth';
 import './App.css';
-import Task from "./Task.jsx";
-import TaskF from "./TaskF.jsx";
-// import Input from './components/Input'
-// import Button from './components/Button'
+// import SignIn from "./SignIn.js";
+import { makeStyles } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
+import Button from '@material-ui/core/Button';
+import AppBar from '@material-ui/core/AppBar';
+import ToolBar from '@material-ui/core/Toolbar';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import Avatar from '@material-ui/core/Avatar';
+import NavBar from './components/NavBar';
 
+
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     flexGrow: 1,
+//   },
+//   menuButton: {
+//     marginRight: theme.spacing(2),
+//   },
+//   title: {
+//     flexGrow: 1,
+//   },
+// }));
 
 function App() {
-  const taskList = [
-    {
-      id: 1,
-      text: "Buy Grosseries",
-      day: "Monday, 12:30 pm",
-      complete: true,
-    },
-    {
-      id: 2,
-      text: "Write Artificial Intelligence Exam",
-      day: "Friday, 8:00 am",
-      complete: false,
-    },
-    {
-      id: 3,
-      text: "Watch Liverpool football match",
-      day: "Sunday, 5:30 pm",
-      complete: false,
-    }
-  ]
+  // const auth = firebase.auth();
+  // const provider = new firebase.auth.GoogleAuthProvider();
+  // const classes = useStyles();
+
+  // // Initialize user state
+  // const [user, setUser] = useState('Guest');
+
+  // // Handle authentication states
+  // auth.onAuthStateChanged(user => {
+  //   if (user) {
+  //     setUser(user);
+  //   }
+  //   else {
+  //     setUser('Guest');
+  //   }
+  // });
+
+  // function googleAuth(action) {
+  //   if (action === 'sign-in') {
+  //     auth.signInWithPopup(provider);
+  //     console.log(user.photoURL)
+  //   }
+  //   else if (action === 'sign-out') {
+  //     auth.signOut();
+  //   }
+  // }
+
+
   return (
     <div>
-      <div className="header">My Class Tasks</div>
-      <div className="tasks">
-        {taskList.map((task) => (
-          <Task details={task} key={task.id} />
-        )
-        )}
-      </div>
-
-      <div className="header">My Functional Tasks</div>
-      <div className="tasks">
-        {taskList.map((task) => (
-          <TaskF details={task} key={task.id} />
-        )
-        )}
-      </div>
-    </div>
+      <CssBaseline />
+      <Container fixed>
+        <NavBar />
+      </Container>
+    </div >
   );
 }
 

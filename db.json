@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Buy Grosseries",
+      "day": "Monday, 12:30 pm",
+      "complete": true
+    },
+    {
+      "id": 2,
+     "text": "Write Artificial Intelligence Exam",
+      "day": "Friday, 8:00 am",
+      "complete": false
+    },
+    {
+      "id": 3,
+      "text": "Watch Liverpool football match",
+      "day": "Sunday, 5:30 pm",
+      "complete": false
+    }
+  ]
+}
